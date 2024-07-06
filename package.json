@@ -19,6 +19,7 @@
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
+    "netlify-lambda": "^2.0.15",
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",
     "@babel/node": "^7.24.7",
