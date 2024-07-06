@@ -12,6 +12,12 @@ app.use(express.urlencoded({extended: false}));
 // Use '/.netlify/functions/api' as base path for routes
 app.use('/.netlify/functions/api', ProductRoutes);
 
+app.use((req, res, next) => {
+    if (process.env.NODE_ENV === 'production' && !req.secure) {
+      return res.redirect('https://' + req.headers.host + req.url);
+    }
+    next();
+  });
 export default app;
 
 // Export handler for serverless use
