@@ -1,0 +1,15 @@
+@api = http://localhost:3001/products
+
+
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+  "Descripcion": "mic",
+  "Precio": "20000.5"
+}
