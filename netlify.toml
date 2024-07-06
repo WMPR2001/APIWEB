@@ -1,13 +1,12 @@
 [build]
-  command = "npm run build"
-  functions = "functions"
   publish = "public"
+  functions = "functions"
   command = "npm ci && npm run build"
-
-[build.environment]
-  NODE_VERSION = "14"  # O la versión que estés usando
 
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api/:splat"
   status = 200
+
+[build.environment]
+  NODE_VERSION = "14"  # Ajusta esto a la versión de Node.js que estés usando
