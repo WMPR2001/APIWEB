@@ -4,7 +4,8 @@
   publish = "public"
   command = "npm ci && npm run build"
 
-
+[build.environment]
+  NODE_VERSION = "14"  # O la versión que estés usando
 
 [[redirects]]
   from = "/*"
