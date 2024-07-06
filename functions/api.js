@@ -1,6 +1,6 @@
 import app from "../src/app";
 import serverless from "serverless-http";
-const app = require('./app');
+const app = require('../src/app');
 export const handler = serverless(app);
 
 //import "../../BaseDatos/conexion"
