@@ -2,6 +2,9 @@
   command = "npm run build"
   functions = "functions"
   publish = "public"
+  command = "npm ci && npm run build"
+
+
 
 [[redirects]]
   from = "/*"
