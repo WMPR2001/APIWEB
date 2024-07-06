@@ -2,5 +2,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default {
-    port: process.env.PORT || 3001
-};
+    apiBaseUrl: process.env.API_BASE_URL || 'https://tu-sitio.netlify.app/.netlify/functions/api',
+    // ... otras configuraciones
+  };
