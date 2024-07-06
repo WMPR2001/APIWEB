@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js --exec babel-node",
-    "start": "node functions/api.js",
-    "build": "netlify-lambda build src"
+   "build": "netlify-lambda build src",
+  "start": "netlify-lambda serve src"
   },
   "keywords": [],
   "author": "",
