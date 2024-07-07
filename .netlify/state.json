@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Concepción de la Vega",
+			"country": {
+				"code": "DO",
+				"name": "Dominican Republic"
+			},
+			"subdivision": {
+				"code": "13",
+				"name": "Provincia de La Vega"
+			},
+			"timezone": "America/Santo_Domingo",
+			"latitude": 19.2281,
+			"longitude": -70.5135
+		},
+		"timestamp": 1720293918153
+	}
+}
