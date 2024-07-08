@@ -2,7 +2,11 @@ import app from "../src/app";
 import serverless from "serverless-http";
 const app = require('../src/app');
 export const handler = serverless(app);
+// src/app.js
+import cors from 'cors';
 
+const app = express();
+app.use(cors());
 //import "../../BaseDatos/conexion"
 const PORT = process.env.PORT || 3000;
 //app.listen(app.get("port"))
