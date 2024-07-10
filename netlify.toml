@@ -5,5 +5,6 @@
 [build.environment]
   NODE_VERSION = "18"
 
-[[plugins]]
+[plugins]
+  [[plugins]]
   package = "@netlify/plugin-functions-install-core"
