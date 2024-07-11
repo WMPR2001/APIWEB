@@ -6,7 +6,8 @@
     "build": "npm ci --production --prefer-offline && netlify-lambda build src --optimize",
     "start": "netlify-lambda serve src",
     "dev": "netlify dev",
-    "netlify-build": "npm ci --production --prefer-offline && netlify-lambda build src --optimize"
+    "netlify-build": "npm ci --production --prefer-offline && netlify-lambda build src --optimize",
+    "install": "yarn install --prefer-offline"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +33,6 @@
     "node": "18.x"
   },
   "npmConfig": {
-    "cache-min": 999999 
+    "cache-min": 999999
   }
 }
