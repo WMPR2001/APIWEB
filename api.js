@@ -1,6 +1,6 @@
-import app from "src/app";
+import app from "./src/app";
 import serverless from "serverless-http";
-const app = require('src/app');
+const app = require('./src/app');
 export const handler = serverless(app);
 // src/app.js
 import cors from 'cors';
