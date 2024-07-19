@@ -1,40 +1,39 @@
 {
   "name": "prueba-php-sqls",
   "version": "1.0.0",
+  "description": "A sample project for testing PHP and SQL Server integration",
   "main": "index.js",
   "scripts": {
-    "build": "npx sass style:_site/style && npx @11ty/eleventy",
-    "start": "netlify-lambda serve src",
-    "dev": "netlify dev",
-    "netlify-build": "pnpm run build",
-    "install": "pnpm install --prefer-offline --registry=https://registry.npmjs.org"
+    "start": "node index.js",
+    "build": "npm run build:esbuild",
+    "build:esbuild": "esbuild --bundle index.js --outfile=build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "php",
+    "sql-server",
+    "node.js",
+    "serverless"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
+    "express": "^4.17.3",
     "mssql": "^11.0.0",
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.7",
-    "@babel/core": "^7.24.7",
-    "@babel/node": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "netlify-cli": "^17.33.0",
-    "netlify-lambda": "^2.0.16",
-    "nodemon": "^3.1.3",
-    "pnpm": "^7.24.7",
-    "sass": "^1.54.9",
-    "@11ty/eleventy": "^2.0.0-canary.35"
+    "esbuild": "^0.17.14",
+    "nodemon": "^2.0.20"
   },
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
-  "npmConfig": {
-    "cache-min": 999999
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WMPR2001/APIWEB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WMPR2001/APIWEB/issues"
   }
 }
